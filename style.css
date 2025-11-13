@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FDC5F5, #F7AEF8, #B388EB, #8093F1, #72DDF7);
+}
+
+.calculator {
+    background: white;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px -5px rgba(0,0,0,0.3);
+}
+
+.calculator-display {
+    background: #8093F1;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+
+.calculator-display h1 {
+    margin: 0;
+    padding: 25px;
+    font-size: 45px;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #FDC5F5;
+}
+::-webkit-scrollbar-thumb {
+    background: #B388EB;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8093F1;
+}
+
+/* Buttons */
+.calculator-buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+button {
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    background: #F7AEF8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:focus {
+    outline: none;
+}
+
+.operator {
+    background: #B388EB;
+    color: white;
+    font-size: 30px;
+}
+
+.clear {
+    background: #FDC5F5;
+    color: #0f0f0f;
+}
+
+.clear:hover {
+    filter: brightness(95%);
+}
+
+.equal-sign {
+    grid-column: -2;
+    grid-row: 2 / span 4;
+    background: #72DDF7;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width:600px) {
+    .calculator {
+        width: 95%;
+    }
+}
