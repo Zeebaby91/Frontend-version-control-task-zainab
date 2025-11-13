@@ -11,4 +11,4 @@ This repository demonstrates my understanding of Git and GitHub workflows — in
 ### Merged Pull Requests
 Below are the screenshots of merged PRs:
 
-![Merged Pull Requests]
+![Merged Pull Requests](merged.pr.JPG)
